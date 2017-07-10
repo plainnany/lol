@@ -16,11 +16,12 @@ a{
     text-decoration: none;
     color: inherit;
 }
-.logo,.icon-top-search,.icon-top-app,.top-user-mask,.icon-hot,.icon-new{
+.logo,.icon-top-search,.icon-top-app,.top-user-mask,.icon-hot,.icon-new
+,.icon-top-play{
     background-image: url("http://ossweb-img.qq.com/images/lol/v2/spr-v2.png");
     background-repeat: no-repeat;
 }
-.wrapper{
+.top{
     background: #0b0b0b;
     position: relative;
 }
@@ -236,4 +237,98 @@ a.sub-nav-link:hover{
     font-size: 12px;
     text-align: center;
     
+}
+
+/* banner */
+.banner{
+    /*width: 1240px;*/
+    margin: 0 auto;
+    background: url(images/pic-big.jpg) no-repeat;
+    background-size: cover;
+    
+}
+.banner-act{
+    width: 1240px;
+    margin: 0 auto;
+    height: 310px;
+    padding-top: 40px;
+    position: relative;
+    
+}
+.banner-act-name{
+    height: 50px;
+    margin-bottom: 10px;
+    color: #ffcb60;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: bold;
+}
+.banner-act-describe{
+    width: 550px;
+    font-size: 14px;
+    color: #dbdbdb;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.banner-act-video{
+    width: 220px;
+    height: 120px;
+    position: relative;
+    border: 1px solid #987630;
+    margin-bottom: 15px;
+}
+
+.btn-top-play{
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+
+}
+.icon-top-play{
+    display: block;
+    width: 35px;
+    height: 50px;
+    margin-top: 35px;
+    margin-left: 93px;
+    background-position: -230px -30px;
+}
+.banner-act-link,.banner-version-link{    
+    border: 2px solid #bd9440;
+    text-align: center;  
+    background: rgba(0,0,0,0.65);
+    
+    font-weight: bold;
+    color: #c89b3c;
+    -moz-border-image: -moz-linear-gradient(top, #6b5024 0%, #b88d35 100%);
+    -webkit-border-image: -webkit-linear-gradient(top, #6b5024 0%, #b88d35 100%);
+    border-image: linear-gradient(to bottom, #6b5024 0%, #b88d35 100%);
+    border-image-slice: 1;
+}
+.banner-act-link{
+    display: block;
+    width: 155px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+}
+.banner-version{
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 30px;
+    font-size: 14px;
+    color: #888787;
+}
+.banner-version em{
+    font-style: normal;
+    color: #f5d185;
+    margin-right: 10px;
+}
+.banner-version-link{
+    display: inline-block;
+    padding: 0 15px;
+    height: 22px;
+    line-height: 22px;  
+    font-size: 12px;
 }
