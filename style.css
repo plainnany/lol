@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font: normal 12px/1.6em Microsoft YaHei,Tahoma,simsun;
+    color: #666;
+    min-width: 1240px;
+    margin: 0 auto;
+    background: #f7f8f8;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.logo,.icon-top-search,.icon-top-app,.top-user-mask,.icon-hot,.icon-new{
+    background-image: url("http://ossweb-img.qq.com/images/lol/v2/spr-v2.png");
+    background-repeat: no-repeat;
+}
+.wrapper{
+    background: #0b0b0b;
+    position: relative;
+}
+#navbar{
+    width: 1240px;
+    margin: 0 auto;
+    height: 90px;
+    
+    
+}
+.logo{
+    width: 190px;
+    height: 100px;
+    position: absolute;
+    top: 5px;
+    background-position: 0 -30px;
+    z-index: 10;
+}
+.logo a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -999em;
+    overflow: hidden;
+    
+}
+.main-nav-wrap{
+    float: left;
+    margin-left: 200px;
+}
+.main-nav{
+    width: 600px;
+    height: 90px;
+    overflow: hidden;
+    zoom: 1;
+}
+.main-nav li{
+    float: left;
+    width: 120px;
+    height: 90px;
+}
+.main-nav a{
+    display: block;
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
+    color: #fafafa;
+    font-size: 18px;
+}
+.main-nav span{
+    display: block;
+    font-size: 10px;
+    color: #838383;
+    font-family: 'Tahoma';
+    text-transform: uppercase;
+}
+
+/* 下拉菜单 */
+.sub-nav{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    visibility: hidden;
+    z-index: 4;
+}
+.main-nav-wrap:hover .sub-nav{
+    visibility: visible
+}
+.sub-nav-main{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: rgba(0,0,0,0.7);
+}
+.sub-nav-inner{
+    width: 1040px;
+    height: 190px;
+    margin: 0 auto;
+    padding-left: 200px;
+    overflow: hidden;
+    zoom: 1;
+}
+.sub-nav-item{
+    width: 120px;
+    float: left;
+}
+.sub-nav-link{
+    display: block;
+    width: 120px;
+    height: 28px;
+    line-height: 28px;
+    color: #e1e1e1;
+    font-size: 14px;
+    text-align: center;
+}
+a.sub-nav-link:hover{
+    color: #e9c06c;
+}
+.sub-nav-item .icon-hot{
+    background-position: -107px 0;
+}
+.sub-nav-item .icon-new{
+    background-position: -129px 0;
+}
+.icon-hot,.icon-new{
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    margin-right: 2px;
+}
+
+.top-search,.top-app{
+    float: left;
+    width: 40px;
+    height: 90px;
+    margin-left: 5px;
+    text-align: center;
+}
+.icon-top-search {
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    margin-top: 25px;
+    background-position: -8px 0;
+}
+.icon-top-app {
+    display: inline-block;
+    width: 21px;
+    height: 27px;
+    margin-top: 25px;
+    background-position: -45px 0;
+    vertical-align: middle;
+}
+
+.top-user{
+    float: left;
+    position: relative;
+}
+.top-user-info{
+    overflow: hidden;
+}
+.top-user-info:hover{
+    background: rgba(27,27,27,0.9);
+}
+.top-user-info:hover .top-user-drop{
+    visibility: visible;
+}
+.top-user-aside{
+    float: left;
+    position: relative;
+    width: 100px;
+    height: 90px;
+}
+.top-user-aside img {
+    width: 66px;
+    height: 66px;
+    margin-left: 17px;
+    margin-top: 12px;
+    border-radius: 33px;
+}
+.top-user-mask{
+    position: absolute;
+    left: 13px;
+    top: 8px;
+    z-index: 2;
+    width: 74px;
+    height: 74px;
+    background-position: 0 -169px;
+}
+.top-user-main{
+    padding-top: 18px;
+    /*overflow: hidden;*/
+    /*zoom: 1;*/
+    margin-left: 110px;
+}
+.top-user-login{
+    font-size: 16px;
+    color: #fff;
+    padding: 5px 0;
+}
+.top-user-login a{
+    color: #dfb257;
+    text-decoration: underline;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.top-user-tips{
+    color: #999;
+    font-size: 12px;
+}
+.top-user-drop{    
+    position: absolute;
+    visibility: hidden;
+    top: 88px;
+    left: 0;
+    width: 100%;
+    padding-top: 20px;
+    z-index: 3;
+    background: rgba(27,27,27,0.9);
+}
+.top-user-drop-tips{
+    padding: 10px 30px 30px;
+    text-align: left;
+    color: #868686;
+    font-size: 14px;
+}
+.top-user-drop-personal{
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    background: #161413;
+    color: #e0e0e0;
+    font-size: 12px;
+    text-align: center;
+    
+}
