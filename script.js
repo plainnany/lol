@@ -1,4 +1,7 @@
 
+$(function(){
+
+
     let aPromoLi = $('.promo-trigger').children()
     let width = $('.promo-item')[0].offsetWidth
     let timer = null
@@ -47,3 +50,4 @@
     tab($('.news-nav'),$('.news-content'),'mouseover')
     tab($('.hero-nav'),$('.hero-content'),'mouseover')
     tab($('.recommend-nav'),$('.recommend-content'),'mouseover')
+})
