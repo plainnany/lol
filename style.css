@@ -24,6 +24,7 @@ img{
     width: 1240px;
     margin: 0 auto;
 }
+/* css reset */
 .clearfix::after{
     content: '';
     display: block;
