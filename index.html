@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-    <!--<meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <title>英雄联盟</title>
 </head>
 <body>
+    <!-- header -->
     <div id="header">
         <div class="top">
-            <div id="navbar">
+            <div id="navbar" class="layout">
                 <div class="logo">
                     <a href="">英雄联盟</a>
                 </div>
@@ -103,7 +104,11 @@
             
         
         </div>
-        <div class="banner">
+        <div class="banner layout">
+            <video class="banner-back-video" id="bannerBackVideo" autoplay="" loop="">
+                <source src="http://ossweb-img.qq.com/images/lol/v2/banner/back-v7.webm" type="video/webm">
+                <source src="http://ossweb-img.qq.com/images/lol/v2/banner/back-v7.mp4" type="video/mp4">
+            </video>
             <div class="banner-act">
                 <h2 class="banner-act-name">对决！ 黎明VS黑夜</h2>
                 <p class="banner-act-describe">秩序。混沌。二者相争不绝，无所不用其极。疾风化尽，命数将成。</p>
@@ -123,6 +128,416 @@
                 </div>
             </div>
                 
+        </div>
+    </div>
+
+    <!-- menu -->
+    <div class="menu">
+        <ul id="J_menu" class="menu-inner layout">
+            <li id="J_menuHome" class="menu-item cur">综合资讯<i class="icon-update"></i></li>
+            <li class="dot"></li>
+            <li id="J_menuVideo" class="menu-item">视频中心<i class="icon-update"></i></li>
+            <li class="dot"></li>
+            <li id="J_menuHMatch" class="menu-item">赛事中心<i class="icon-update"></i></li>
+            <li class="dot"></li>
+            <li id="J_menuAct" class="menu-item">活动中心<i class="icon-update"></i></li>
+            <!--<li class="menu-last"><a href="//lol.qq.com/?v2" target="_blank" onclick="pgvSendClick({hottag:'v2.menu.gov1'})">返回旧版官网&gt;</a></li>-->
+            <!--<li class="dot"></li>-->
+            <!--<li class="last">视音中心<i class="icon-update"></i></li>-->
+        </ul>
+    </div>
+    <div class="content">
+        <div class="content-inner">
+            <div class="layout">
+                <div class="home-slide">
+                    <!-- 综合咨询 -->
+                    <div class="home-slide-item cur-slide">
+                        <!-- 轮播 -->
+                        <div id="J-promo" class="promo">
+                            <ul id="promoInner" class="promo-list">
+                                <li class="promo-item">
+                                    <a onclick="" width="820" height="350" alt="我们是冠军！">
+                                        <img src="http://ossweb-img.qq.com/upload/adw/image/1499774199/1499774199.jpg?_r=1499916398" 
+                                        alt="好运魄罗降临">
+                                    </a>
+                                </li>
+                                <li class="promo-item">
+                                    <a onclick="" width="820" height="350" alt="我们是冠军！">
+                                        <img src="http://ossweb-img.qq.com/upload/adw/image/1499774256/1499774256.jpg?_r=1499916398" 
+                                        alt="好运魄罗降临">
+                                    </a>
+                                </li>
+                                <li class="promo-item">
+                                    <a onclick="" width="820" height="350" alt="我们是冠军！">
+                                        <img src="http://ossweb-img.qq.com/upload/adw/image/1499832699/1499832699.jpg?_r=1499916398" 
+                                        alt="好运魄罗降临">
+                                    </a>
+                                </li>
+                                <li class="promo-item">
+                                    <a onclick="" width="820" height="350" alt="我们是冠军！">
+                                        <img src="http://ossweb-img.qq.com/upload/adw/image/1499690136/1499690136.jpg?_r=1499916398" 
+                                        alt="好运魄罗降临">
+                                    </a>
+                                </li>
+                                <li class="promo-item">
+                                    <a onclick="" width="820" height="350" alt="我们是冠军！">
+                                        <img src="http://ossweb-img.qq.com/upload/adw/image/1499916397/1499916397.jpg?_r=1499916398" 
+                                        alt="好运魄罗降临">
+                                    </a>
+                                </li>
+                            </ul>
+                            <div id="promoTrigger" class="promo-trigger">
+                                <span class="trigger-item">好运魄罗降临</span>
+                                <span class="trigger-item">庆LPL登顶亚洲</span>
+                                <span class="trigger-item on">LPL17点直播开启</span>
+                                <span class="trigger-item">S6冠军皮肤售卖</span>
+                                <span class="trigger-item">我们是冠军！</span>
+                            </div>
+                        </div>
+                        <!-- 轮播 -->
+                        <!-- 侧栏 -->
+                        <div class="side-nav">
+                            <div class="side-download">
+                                <video class="side-down-video" autoplay="" loop="">
+                                    <source src="http://ossweb-img.qq.com/images/lol/v2/down.mp4" type="video/mp4">
+                                </video>
+                                <a href="" class="side-nav-download"> </a>
+                            </div>
+                            <ul class="side-menu">
+                                <li><a href=""><i class="icon-guide"></i>新手推荐</a></li>
+                                <li><a href=""><i class="icon-yuzhou"></i>宇宙官网<i class="icon-hot"></i></a></li>
+                                <li><a href=""><i class="icon-mall"></i>周边商城</a></li>
+                                <li><a href=""><i class="icon-client"></i>新客户端<i class="icon-new"></i></a></li>
+                                <li><a href=""><i class="icon-canyon"></i>峡谷之巅<i class="icon-new"></i></a></li>
+                                <li><a href=""><i class="icon-cdk"></i>CDK兑换</a></li>
+                                <li><a href=""><i class="icon-mode"></i>轮换模式<i class="icon-hot"></i></a></li>
+                                <li><a href=""><i class="icon-info"></i>游戏资料</a></li>
+                                <li><a href=""><i class="icon-reward"></i>领奖中心</a></li>
+                                <li><a href=""><i class="icon-weibo"></i>官方微博</a></li>
+                                <li><a href=""><i class="icon-bbs"></i>玩家论坛</a></li>
+                                <li><a href=""><i class="icon-qq"></i>在线客服</a></li>
+                            </ul>
+                        </div>
+                        <!-- 侧栏 -->
+                        <!-- 最新资讯 -->
+                        <div class="news">
+                            <div class="tab news-top">
+                                <h3 class="tab-title">最新资讯</h3>
+                                <ul id="J_newsTab" class="tab-nav news-nav">
+                                    <li class="current">综合新闻</li>
+                                    <li class="">官方公告</li>
+                                    <li class="">赛事新闻</li>
+                                    <li class="">论坛资讯</li>
+                                </ul>
+                            </div>
+                            <div class="news-list">
+                                <div class="news-content">
+                                    <ul class="text-list">
+                                        <li class="first">
+                                            <a href="">
+                                                <img src="http://ossweb-img.qq.com/images/lol/v2/news/pic-news7.jpg" alt="">
+                                                <span class="news-first-title">符文流星抢先看</span>
+                                                <span class="news-first-desc">本周我们带大家抢先看下一个正在制作中的全新基石符文，它暂时叫做流星。</span>
+                                            </a>
+                                        </li>
+                                        <li class="news-item">
+                                            <a href="" class="news-link">
+                                                <span class="news-type">
+                                                    新闻
+                                                </span>
+                                                新英雄CG动画：凯隐 影之道
+                                                <span class="date">07/13</span>
+                                            </a>
+                                        </li>
+                                        <li class="news-item">
+                                            <a href="" class="news-link">
+                                                <span class="news-type">
+                                                    新闻
+                                                </span>
+                                                新英雄CG动画：凯隐 影之道
+                                                <span class="date">07/13</span>
+                                            </a>
+                                        </li>
+                                        <li class="news-item">
+                                            <a href="" class="news-link">
+                                                <span class="news-type">
+                                                    新闻
+                                                </span>
+                                                新英雄CG动画：凯隐 影之道
+                                                <span class="date">07/13</span>
+                                            </a>
+                                        </li>
+                                        <li class="news-item">
+                                            <a href="" class="news-link">
+                                                <span class="news-type">
+                                                    新闻
+                                                </span>
+                                                新英雄CG动画：凯隐 影之道
+                                                <span class="date">07/13</span>
+                                            </a>
+                                        </li>
+                                        <li class="news-item">
+                                            <a href="" class="news-link">
+                                                <span class="news-type">
+                                                    新闻
+                                                </span>
+                                                新英雄CG动画：凯隐 影之道
+                                                <span class="date">07/13</span>
+                                            </a>
+                                        </li>
+                                        <li class="news-item">
+                                            <a href="" class="news-link">
+                                                <span class="news-type">
+                                                    新闻
+                                                </span>
+                                                新英雄CG动画：凯隐 影之道
+                                                <span class="date">07/13</span>
+                                            </a>
+                                        </li>
+                                        <li class="news-item">
+                                            <a href="" class="news-link">
+                                                <span class="news-type">
+                                                    新闻
+                                                </span>
+                                                新英雄CG动画：凯隐 影之道
+                                                <span class="date">07/13</span>
+                                            </a>
+                                        </li>
+                                        <li class="news-item">
+                                            <a href="" class="news-link">
+                                                <span class="news-type">
+                                                    新闻
+                                                </span>
+                                                新英雄CG动画：凯隐 影之道
+                                                <span class="date">07/13</span>
+                                            </a>
+                                        </li>
+                                        <li class="news-item">
+                                            <a href="" class="news-link">
+                                                <span class="news-type">
+                                                    新闻
+                                                </span>
+                                                新英雄CG动画：凯隐 影之道
+                                                <span class="date">07/13</span>
+                                            </a>
+                                        </li>
+                                        <li class="news-item">
+                                            <a href="" class="news-link">
+                                                <span class="news-type">
+                                                    新闻
+                                                </span>
+                                                新英雄CG动画：凯隐 影之道
+                                                <span class="date">07/13</span>
+                                            </a></li>       
+                                    </ul>
+                                </div>
+                            </div>
+                            <a class="news-more" href="//lol.qq.com/webplat/info/news_version3/152/4579/m5583/list_1.shtml" onclick="pgvSendClick({hottag:'v2.news.btn.more'})" target="_blank">
+                                阅读更多
+                                <em>最新资讯</em>
+                            </a>
+                        </div>
+                        <!-- 最新资讯 -->
+                        <!-- 英雄皮肤 -->
+                        <div class="home-mod hero">
+                            <div class="hd">
+                                <div class="tab hero-tab">
+                                    <ul id="J_heroTab" class="tab-nav hero-nav">
+                                        <li class="current">周免英雄</li>
+                                        <li class="">最新皮肤</li>
+                                        <li class="">最新英雄</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="bd">
+                                <div class="hero-content hero-free" style="display: none;">
+                                    <div id="J_freeList" class="free-list clearfix">
+                                        <a title="殇之木乃伊 阿木木"  target="_blank">
+                                            <img width="195" height="70" alt="殇之木乃伊 阿木木" src="http://ossweb-img.qq.com/images/lol/v2/champion/avatar/Amumu.jpg">
+                                            <span class="sbg">
+                                                <span class="first-name">殇之木乃伊</span>
+                                            </span>
+                                        </a>
+                                        <a title="深渊巨口 克格莫" href="/web201310/info-defail.shtml?id=KogMaw" target="_blank">
+                                            <img width="195" height="70" alt="深渊巨口 克格莫" src="http://ossweb-img.qq.com/images/lol/v2/champion/avatar/KogMaw.jpg">
+                                            <span class="sbg">
+                                                <span class="first-name">深渊巨口</span>
+                                            </span>
+                                        </a>
+                                        <a title="盲僧 李青" href="/web201310/info-defail.shtml?id=LeeSin" target="_blank">
+                                            <img width="195" height="70" alt="盲僧 李青" src="http://ossweb-img.qq.com/images/lol/v2/champion/avatar/LeeSin.jpg">
+                                            <span class="sbg">
+                                                <span class="first-name">盲僧</span>
+                                            </span>
+                                        </a>
+                                        <a title="光辉女郎 拉克丝" href="/web201310/info-defail.shtml?id=Lux" target="_blank">
+                                            <img width="195" height="70" alt="光辉女郎 拉克丝" src="http://ossweb-img.qq.com/images/lol/v2/champion/avatar/Lux.jpg">
+                                            <span class="sbg">
+                                                <span class="first-name">光辉女郎</span>
+                                            </span>
+                                        </a>
+                                        <a title="扭曲树精 茂凯" href="/web201310/info-defail.shtml?id=Maokai" target="_blank">
+                                            <img width="195" height="70" alt="扭曲树精 茂凯" src="http://ossweb-img.qq.com/images/lol/v2/champion/avatar/Maokai.jpg">
+                                            <span class="sbg">
+                                                <span class="first-name">扭曲树精</span>
+                                            </span>
+                                        </a>
+                                        <a title="幻翎 洛" href="/web201310/info-defail.shtml?id=Rakan" target="_blank">
+                                            <img width="195" height="70" alt="幻翎 洛" src="http://ossweb-img.qq.com/images/lol/v2/champion/avatar/Rakan.jpg">
+                                            <span class="sbg">
+                                                <span class="first-name">幻翎</span>
+                                            </span>
+                                        </a>
+                                        <a title="虚空遁地兽 雷克塞" href="/web201310/info-defail.shtml?id=RekSai" target="_blank">
+                                            <img width="195" height="70" alt="虚空遁地兽 雷克塞" src="http://ossweb-img.qq.com/images/lol/v2/champion/avatar/RekSai.jpg">
+                                            <span class="sbg">
+                                                <span class="first-name">虚空遁地兽</span>
+                                            </span>
+                                        </a>
+                                        <a title="瓦洛兰之盾 塔里克" href="/web201310/info-defail.shtml?id=Taric" target="_blank">
+                                            <img width="195" height="70" alt="瓦洛兰之盾 塔里克" src="http://ossweb-img.qq.com/images/lol/v2/champion/avatar/Taric.jpg">
+                                            <span class="sbg">
+                                                <span class="first-name">瓦洛兰之盾</span>
+                                            </span>
+                                        </a>
+                                        <a title="卡牌大师 崔斯特" href="/web201310/info-defail.shtml?id=TwistedFate" target="_blank">
+                                            <img width="195" height="70" alt="卡牌大师 崔斯特" src="http://ossweb-img.qq.com/images/lol/v2/champion/avatar/TwistedFate.jpg">
+                                            <span class="sbg">
+                                                <span class="first-name">卡牌大师</span>
+                                            </span>
+                                        </a>
+                                        <a title="逆羽 霞" href="/web201310/info-defail.shtml?id=Xayah" target="_blank">
+                                            <img width="195" height="70" alt="逆羽 霞" src="http://ossweb-img.qq.com/images/lol/v2/champion/avatar/Xayah.jpg">
+                                            <span class="sbg">
+                                                <span class="first-name">逆羽</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div id="J_freeDate" class="free-time">免费时间：2017-07-07 至 2017-07-14</div>
+                                </div>
+                                <div class="hero-content hero-skin" style="display: block;">
+                                    <div id="J_skinNew" class="hero-new-list hero-skin-list clearfix">
+                                        <a class="skin-first" href="http://lol.qq.com/act/a20170703skt/" target="_blank">
+                                            <img src="http://ossweb-img.qq.com/images/lol/v2/skin/recommend/a20170703skt.jpg" width="400" height="145">
+                                        </a>
+                                        <a href="http://lol.qq.com/act/a20170612vs/" target="_blank" onclick="pgvSendClick({hottag:'main.hero.newSkin.a20170612vs'})">
+                                            <img src="http://ossweb-img.qq.com/images/lol/v2/skin/a20170612vs.jpg" width="195" height="70" alt="">
+                                            <span class="sbg">
+                                                <span class="first-name">黎明VS黑暗</span>
+                                            </span>
+                                        </a>
+                                        <a href="http://lol.qq.com/act/a20170522caitlin/" target="_blank">
+                                            <img src="http://ossweb-img.qq.com/images/lol/v2/skin/a20170522caitlin.jpg" width="195" height="70" alt="">
+                                            <span class="sbg">
+                                                <span class="first-name">未来战士</span>
+                                            </span>
+                                        </a>
+                                        <a href="http://lol.qq.com/act/a20170407fist/" target="_blank">
+                                            <img src="http://ossweb-img.qq.com/images/lol/v2/skin/a20170407fist.jpg" width="195" height="70" alt="">
+                                            <span class="sbg">
+                                                <span class="first-name">神拳</span>
+                                            </span>
+                                        </a>
+                                        <a href="http://lol.qq.com/act/a20170401fool/" target="_blank">
+                                            <img src="http://ossweb-img.qq.com/images/lol/v2/skin/a20170401fool.jpg" width="195" height="70" alt="">
+                                            <span class="sbg">
+                                                <span class="first-name">玩具大战系列</span>
+                                            </span>
+                                        </a>
+                                        <a href="http://lol.qq.com/act/a20170213blood/" target="_blank">
+                                            <img src="http://ossweb-img.qq.com/images/lol/v2/skin/a20170213blood.jpg" width="195" height="70" alt="">
+                                            <span class="sbg">
+                                                <span class="first-name">血月系列</span>
+                                            </span>
+                                        </a>
+                                        <a href="http://lol.qq.com/act/a20161117nautilus/" target="_blank">
+                                            <img src="http://ossweb-img.qq.com/images/lol/v2/skin/a20161117nautilus.jpg" width="195" height="70" alt="">
+                                            <span class="sbg">
+                                                <span class="first-name">灭世魔神系列</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="hero-content hero-new" style="display: none;">
+                                    <div id="J_heroNew" class="hero-new-list clearfix">
+                                        <a href="http://lol.qq.com/act/a20170419luoxia/" target="_blank">
+                                            <img src="http://ossweb-img.qq.com/images/lol/v2/champion/avatar/Luoxia.jpg" width="195" height="70" alt="">
+                                            <span class="sbg">
+                                                <span class="first-name">洛与霞</span>
+                                            </span>
+                                        </a>
+                                        <a href="http://lol.qq.com/act/a20161121camille/" target="_blank">
+                                            <img src="http://ossweb-img.qq.com/images/lol/v2/champion/avatar/Camille.jpg" width="195" height="70" alt="">
+                                            <span class="sbg">
+                                                <span class="first-name">卡蜜尔</span>
+                                            
+                                            </span>
+                                        </a>
+                                        <a href="http://lol.qq.com/act/a20161009ivern/" target="_blank">
+                                            <img src="http://ossweb-img.qq.com/images/lol/v2/champion/avatar/Ivern.jpg" width="195" height="70" alt="">
+                                            <span class="sbg">
+                                                <span class="first-name">艾翁</span>
+                                            </span>
+                                        </a>
+                                        <a href="http://lol.qq.com/act/a20160812kled/" target="_blank">
+                                            <img src="http://ossweb-img.qq.com/images/lol/v2/champion/avatar/Kled.jpg" width="195" height="70" alt="">
+                                            <span class="sbg">
+                                                <span class="first-name">暴怒骑士</span>
+                                            </span>
+                                        </a>
+                                        <a href="http://lol.qq.com/act/a20160523taliyah/" target="_blank">
+                                            <img src="http://ossweb-img.qq.com/images/lol/v2/champion/avatar/Taliyah.jpg" width="195" height="70" alt="">
+                                            <span class="sbg">
+                                                <span class="first-name">塔利垭</span>
+                                            </span>
+                                        </a>
+                                        <a href="http://lol.qq.com/act/a20160308sol/" target="_blank">
+                                            <img src="http://ossweb-img.qq.com/images/lol/v2/champion/avatar/AurelionSol.jpg" width="195" height="70" alt="">
+                                            <span class="sbg">
+                                                <span class="first-name">奥瑞利安</span>
+                                            </span>
+                                        </a>
+                                        <a href="http://lol.qq.com/act/a20160125deadeye/" target="_blank">
+                                            <img src="http://ossweb-img.qq.com/images/lol/v2/champion/avatar/Jhin.jpg" width="195" height="70" alt="">
+                                            <span class="sbg">
+                                                <span class="first-name">戏命师</span>
+                                            </span>
+                                        </a>
+                                        <a href="http://lol.qq.com/act/a20151125kraken/" target="_blank">
+                                            <img src="http://ossweb-img.qq.com/images/lol/v2/champion/avatar/Illaoi.jpg" width="195" height="70" alt="">
+                                            <span class="sbg">
+                                                <span class="first-name">海兽祭司</span>
+                                            </span>
+                                        </a>
+                                        <a href="http://lol.qq.com/act/a20150930kindred/" target="_blank">
+                                            <img src="http://ossweb-img.qq.com/images/lol/v2/champion/avatar/Kindred.jpg" width="195" height="70" alt="">
+                                            <span class="sbg">
+                                                <span class="first-name">永猎双子</span>
+                                            </span>
+                                        </a>
+                                        <a href="http://lol.qq.com/act/a20150709tm/" target="_blank">
+                                            <img src="http://ossweb-img.qq.com/images/lol/v2/champion/avatar/TahmKench.jpg" width="195" height="70" alt="">
+                                            <span class="sbg">
+                                                <span class="first-name">河流之王</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="qt-go" onclick=""><img alt="" src="http://ossweb-img.qq.com/images/lol/v1/survey.jpg" width="400" height="90"></a>
+                            <div class="side-tips-18">
+                                <i class="icon-18"></i>
+                                <h5>本游戏适合18岁（含）以上玩家娱乐</h5>
+                                <p>抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当<br>适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活</p>
+                            </div>
+                        </div>
+                        <!-- 英雄皮肤 -->
+                    </div>
+
+                </div>
+                
+
+            </div>
         </div>
     </div>
     

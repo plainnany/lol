@@ -8,6 +8,7 @@ body{
     min-width: 1240px;
     margin: 0 auto;
     background: #f7f8f8;
+    
 }
 li{
     list-style: none;
@@ -16,8 +17,22 @@ a{
     text-decoration: none;
     color: inherit;
 }
+img{
+    vertical-align: top;
+}
+.layout{
+    width: 1240px;
+    margin: 0 auto;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
 .logo,.icon-top-search,.icon-top-app,.top-user-mask,.icon-hot,.icon-new
-,.icon-top-play{
+,.icon-top-play,.icon-guide,.icon-yuzhou,.icon-mall,.icon-client
+,.icon-canyon,.icon-cdk,.icon-mode,.icon-info,.icon-reward,.icon-weibo
+,.icon-bbs,.icon-qq,.icon-18{
     background-image: url("http://ossweb-img.qq.com/images/lol/v2/spr-v2.png");
     background-repeat: no-repeat;
 }
@@ -25,9 +40,10 @@ a{
     background: #0b0b0b;
     position: relative;
 }
+#header{
+    overflow-x: hidden;
+}
 #navbar{
-    width: 1240px;
-    margin: 0 auto;
     height: 90px;
     
     
@@ -243,13 +259,12 @@ a.sub-nav-link:hover{
 .banner{
     /*width: 1240px;*/
     margin: 0 auto;
-    background: url(images/pic-big.jpg) no-repeat;
     background-size: cover;
+    position: relative;
+    
     
 }
 .banner-act{
-    width: 1240px;
-    margin: 0 auto;
     height: 310px;
     padding-top: 40px;
     position: relative;
@@ -331,4 +346,410 @@ a.sub-nav-link:hover{
     height: 22px;
     line-height: 22px;  
     font-size: 12px;
+}
+
+.banner-back-video{
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 0;
+    margin-left: -960px;
+    width: 1920px;
+    height: 350px;
+}
+
+/*  menu */
+.menu{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    border-top: 2px solid #8c6c2d;
+    background: url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) repeat-x 0 -257px;
+}
+.menu .cur{
+    color: #d1ab57;
+    border-bottom: 2px solid #d1ab57;
+}
+.menu li{
+    float: left;
+    width: 110px;
+    height: 58px;
+    line-height: 58px;
+    border-bottom: 2px solid transparent;
+    font-size: 20px;
+    color: #555555;
+    text-align: center;
+    cursor: pointer;
+}
+.menu .dot{
+    width: 13px;
+    height: 50px;
+    margin: 4px 18px;
+    background: url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat -290px -30px;
+}
+.fix-menu{
+    position: fixed;
+    top: 0;
+    z-index: 888;
+}
+
+.content{
+    padding-top: 40px;
+    margin-top: -20px;
+    background: #f7f7f7 url(http://ossweb-img.qq.com/images/lol/v2/bg-content-top.jpg) no-repeat center top;
+}
+.promo{
+    float: left;
+    position: relative;
+    width: 820px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+.promo-list{
+    position: relative;
+    width: 4100px;
+    /* height: 350px; */
+}
+.promo-item{
+    float: left;
+    width: 820px;
+    height: 350px;
+    background: #000;
+    overflow: hidden;
+}
+.promo-item img{
+    width: 100%;
+    height: 100%;
+} 
+.promo-trigger{
+    width: 100%;
+    background: #121112;
+    height: 50px;
+    overflow: hidden;
+
+}
+.promo-trigger span{
+    float: left;
+    width: 164px;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    text-align: center;
+    color: #c8c8c8;
+    font-size: 14px;
+}
+.promo-trigger .on{
+    color: #e9c06c;
+    background: #303030;
+}
+.side-download{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    background: url(http://ossweb-img.qq.com/images/lol/v2/bg-download.jpg) no-repeat 0 0;
+}
+.side-nav-download{
+    display: block;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-indent: -999em;
+    overflow: hidden;
+}
+.side-nav{
+    float: left;
+    width: 400px;
+}
+.side-menu{
+    margin-left: -5px;
+}
+.side-menu li{
+    position: relative;
+    float: left;
+    width: 130px;
+    height: 55px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.side-menu a{
+    display: block;
+    line-height: 55px;
+    background: #fff;
+    text-align: center;
+    font-size: 14px;
+    color: #555555;
+}
+.side-menu a:hover{
+    background-color: #f0f0f0;
+}
+.icon-guide,.icon-yuzhou,.icon-mall,.icon-client
+,.icon-canyon,.icon-cdk,.icon-mode,.icon-info,.icon-reward,.icon-weibo
+,.icon-bbs,.icon-qq{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+.side-menu .icon-new,
+.side-menu .icon-hot{
+    position: absolute;
+    margin-top: 3px;
+}
+
+.icon-hot{
+    background-position: -107px 0;
+}
+.icon-new{
+    background-position: -129px 0;
+}
+.icon-guide{
+    background-position: -200px 0;
+}
+.icon-yuzhou{
+    background-position: -560px 0;
+}
+.icon-mall{
+    background-position: -590px 0;
+}
+.icon-client{
+    background-position: -380px 0;
+}
+.icon-canyon{
+    background-position: -650px 0;
+}
+.icon-cdk{
+    background-position: -290px 0;
+
+}
+.icon-mode{
+    background-position: -620px 0;
+
+}
+.icon-info{
+    background-position: -260px 0;
+}
+.icon-reward{
+    background-position: -470px 0;
+}
+.icon-weibo{
+    background-position: -500px 0;
+
+}
+.icon-bbs{
+    background-position: -410px 0;
+
+}
+.icon-qq{
+    background-position: -440px 0;
+}
+
+.news{
+    float: left;
+    width: 820px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+}
+.tab{
+    position: relative;
+    height: 50px;
+    border-bottom: 3px solid #ededee;
+}
+.tab-title{
+    float: left;
+    font-size: 26px;
+    line-height: 50px;
+    color: #404040;
+    margin-right: 40px;
+    font-weight: normal;
+}
+.tab-nav{
+    float: left;
+    margin-top: 14px;
+    position: relative;
+    height: 36px;
+}
+.tab-nav li{
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    overflow: hidden;
+    cursor: pointer;
+    color: #666666;
+    font-size: 16px;
+    text-align: center;
+}
+.tab-nav .current {
+    color: #d1ab57;
+    font-weight: bold;
+    border-bottom: 3px solid #d1ab57;
+}
+
+.news-nav li{
+    width: 168px;
+    font-size: 18px;
+}
+.news-list{
+    padding-top: 24px;
+
+}
+
+.news-content .first{
+    margin-bottom: 24px;
+}
+.news-content .first img{
+    float: left;
+    margin-right: 20px;
+}
+.news-content .news-first-title{
+    display: block;
+    font-size: 36px;
+    font-weight: bold;
+    color: #3e3e3e;
+    line-height: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+.news-content .news-first-desc{
+    display: block;
+    height: 60px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #898989;
+    line-height: 1.5;
+}
+.news-item{
+    height: 35px;
+    line-height: 35px;
+    padding: 4px 0;
+}
+.news-link{
+    display: block;
+    position: relative;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 55px 0 90px;
+    overflow: hidden;
+    font-size: 16px;
+    color: #555555;
+}
+.news-link:hover{
+    color: #d1ab57;
+    text-decoration: none;
+}
+.news-link:hover .news-type{
+    background: #d1ab57;
+    color: #fff;
+}
+
+.news-type{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 68px;
+    height: 35px;
+    line-height: 35px;
+    background: #ebebeb;
+    text-align: center;
+    color: #7a7a7a;
+}
+.news .date{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 35px;
+    line-height: 35px;
+    text-align: right;
+    color: #bababa;
+}
+.news .news-more{
+    display: block;
+    width: 100%;
+    height: 45px;
+    margin-top: 24px;
+    line-height: 45px;
+    background: #f0f0f0;
+    color: #515151;
+    font-size: 16px;
+    text-align: center;
+}
+.news .news-more:hover{
+    color: #555555;
+    background: #dad8d8;
+}
+.news .news-more em{
+    color: #d1ab57;
+    font-style: normal;
+
+}
+/* 皮肤 */
+.bd{
+    overflow: hidden;
+    zoom: 1;
+}
+.hero{
+    float: left;
+    width: 400px;
+}
+.hero-content{
+    margin-bottom: 20px;
+    height: 400px;
+}
+.home-mod{
+    margin-bottom: 50px;
+}
+.hero-tab{
+    margin-bottom: 15px;
+}
+.hero-tab li {
+    width: 133.333333px;
+}
+.free-list, .hero-new-list {
+    position: relative;
+    margin-right: -10px;
+}
+.free-list a, .hero-new-list a {
+    float: left;
+    position: relative;
+    width: 195px;
+    height: 70px;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.hero-new-list a.skin-first{
+    width: 100%;
+    height: 145px;
+}
+.free-time{
+    text-align: right;
+    color: #9F9F9F;
+    margin-bottom: 22px;
+}
+.qt-go{
+    display: block;
+    margin-top: 42px;
+    margin-bottom: 20px;
+}
+.side-tips-18{
+    position: relative;
+    height: 70px;
+    padding-top: 5px;
+    padding-left: 80px;
+    font-size: 12px;
+    color: #878787;
+}
+.icon-18{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 70px;
+    height: 70px;
+    background-position: -330px -89px;
 }
