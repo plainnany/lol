@@ -410,6 +410,7 @@ a.sub-nav-link:hover{
     position: relative;
     width: 4100px;
     /* height: 350px; */
+    transition: ease all .8s;
 }
 .promo-item{
     float: left;
@@ -553,7 +554,7 @@ a.sub-nav-link:hover{
     float: left;
     width: 820px;
     margin-right: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 .tab{
     position: relative;
@@ -598,7 +599,9 @@ a.sub-nav-link:hover{
     padding-top: 24px;
 
 }
-
+.news-content{
+    display: none;
+}
 .news-content .first{
     margin-bottom: 24px;
 }
@@ -704,6 +707,9 @@ a.sub-nav-link:hover{
 .home-mod{
     margin-bottom: 50px;
 }
+.home-slide-item{
+    padding-bottom: 20px;
+}
 .hero-tab{
     margin-bottom: 15px;
 }
@@ -722,6 +728,10 @@ a.sub-nav-link:hover{
     overflow: hidden;
     margin-right: 10px;
     margin-bottom: 10px;
+}
+.free-list a:hover .sbg,
+.hero-new-list a:hover .sbg{
+    display: block;
 }
 .hero-new-list a.skin-first{
     width: 100%;
@@ -752,4 +762,239 @@ a.sub-nav-link:hover{
     width: 70px;
     height: 70px;
     background-position: -330px -89px;
+}
+.sbg{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.78);
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+}
+.sbg .first-name{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 30px;
+    padding-top: 0;
+    line-height: 14px;
+    color: #c9aa71;
+}
+
+/* 最新推荐 */
+.recommend{
+    clear: both;
+}
+.recommend-list {
+   
+}
+.recommend-nav li {
+    width: 150px;
+}
+.recommend-top{
+    margin-bottom: 20px;
+}
+.recommend-video{
+    height: 190px;
+}
+.pv-list {
+    width: 1260px;
+    position: relative;
+}
+.pv-list li {
+    width: 190px;
+    height: 155px;
+    margin: 0 20px 20px 0;
+    position: relative;
+    float: left;
+    cursor: pointer;
+}
+.pv-list li a:hover{
+    background: #eee;
+    color: #d1ab57;
+}
+.pv-list li a:hover .pv-cover-ico,
+.pv-list li a:hover .pv-cover-1{
+    display: block;
+}
+.pv-list li .pv-lnk {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #555;
+    position: relative;
+}
+.pv-list li .pv-lnk img {
+    width: 190px;
+    height: 110px;
+    display: block;
+    margin-bottom: 5px;
+}
+.pv-list li .pv-cover-1 {
+    position: absolute;
+    width: 100%;
+    height: 110px;
+    top: 0;
+    left: 0;
+    display: none;
+    background: rgba(0,0,0,0.3);
+
+}
+.pv-list li .pv-lnk .pv-cover-ico {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    left: 60px;
+    top: 20px;
+    display: none;
+    background: url(http://ossweb-img.qq.com/images/lol/web201310/video/bg-icon-v.png) no-repeat 0 0;
+}
+.pv-list li .pv-lnk h5 {
+    font-weight: normal;
+    line-height: 20px;
+    height: 40px;
+    overflow: hidden;
+    font-size: 14px;
+}
+.shadow1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 20%;
+    background: rgba(0,0,0,0.5);
+}
+.pv-list .shadow1 {
+    bottom: 45px;
+    text-align: right;
+    line-height: 30px;
+}
+.shadow1 i {
+    padding-right: 5px;
+    font-style: normal;
+    color: #ddd;
+}
+.recommend-more{
+    display: block;
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
+    line-height: 45px;
+    background: #f0f0f0;
+    color: #515151;
+    font-size: 16px;
+    text-align: center;
+}
+.recommend-more:hover{
+    color: #555555;
+    background: #dad8d8;
+}
+.recommend-more em {
+    font-style: normal;
+    color: #d1ab57;
+}
+
+.recommend-act{
+    margin-right: -13px;
+}
+.recommend-act li{
+    width: 300px;
+    height: 240px;
+    float: left;
+    margin-right: 13px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.15);
+}
+
+.recommend-act .act-img{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 130px;
+    overflow: hidden;
+
+}
+
+.recommend-act .act-img img{
+    width: 100%;
+    transition: ease all .8s;
+}
+.recommend-act a:hover img{
+    transform: scale(1.05,1.05);
+
+}
+.act-num{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 26px;
+    line-height: 26px;
+    color: #f8f8f8;
+    font-size: 12px;
+    text-align: center;
+    background: rgba(0,0,0,.6);
+
+
+}
+.act-num-f{
+    color: #f3ca6f;
+    margin: 0 4px;
+    font-weight: normal;
+}
+.act-over{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: block;
+    height: 22px;
+    padding: 0 8px;
+    line-height: 22px;
+    border-radius: 11px;
+    background: #c8c8c8; 
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+.act-inner{
+    padding: 11px 15px 0;
+    position: relative;
+}
+.act-date{
+    font-size: 12px;
+    line-height: 16px;
+    color: #d1ab57;
+    margin: 6px 0 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.act-date span{
+    color: #9f9f9f;
+}
+
+/* footer */
+.footer{
+    padding: 30px 0;
+    zoom: 1;
+    background: url(http://ossweb-img.qq.com/images/lol/v2/bg-footer.jpg) no-repeat center top;
+    color: #A5A5A5;
+}
+.footer .footer-list{
+    float: right;
+}
+.footer .footer-list-link{
+    color: #568193;
+}
+.footer-list span{
+    padding: 0 1px;
+    color: #568193;
+}
+.footer-list .copyright{
+    color: #415967;
 }
