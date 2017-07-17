@@ -1,7 +1,18 @@
 
 $(function(){
+    // scroll
 
-
+    $(document).on('scroll',function(){
+        $('.header').addClass('header-close')
+        let scrollTop=$(document).scrollTop()
+        if(scrollTop>400){
+            $('.menu').addClass('fix-menu')
+        }else{
+            $('.menu').removeClass('fix-menu')
+        }
+    })
+    
+    // tab auto
     let aPromoLi = $('.promo-trigger').children()
     let width = $('.promo-item')[0].offsetWidth
     let timer = null
@@ -35,7 +46,9 @@ $(function(){
         clearInterval(timer)
         timer=setTimeout(autoPlay,2000)
     })
-    
+
+
+    // tab
     function tab(oNav,oContent,oEvent){
         oContent.hide().eq(0).show()
         var aLi = oNav.children()
@@ -50,4 +63,14 @@ $(function(){
     tab($('.news-nav'),$('.news-content'),'mouseover')
     tab($('.hero-nav'),$('.hero-content'),'mouseover')
     tab($('.recommend-nav'),$('.recommend-content'),'mouseover')
+    
+    $('#J_menu > .menu-item').each(function(index){
+        $('.home-slide-item').hide().eq(0).show()
+        $(this).on('click',function(){
+            $('#J_menu > .menu-item').removeClass('current').eq(index).addClass('current')
+            $('.home-slide-item').fadeOut().eq(index).fadeIn()
+        })
+    })
+
+
 })

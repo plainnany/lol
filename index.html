@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- header -->
-    <div id="header">
+    <div id="header" class="header">
         <div class="top">
             <div id="navbar" class="layout">
                 <div class="logo">
@@ -105,10 +105,14 @@
         
         </div>
         <div class="banner layout">
+            <video class="banner-big-video" id="bannerBigVideo" autoplay="" loop="">
+                <source src="https://ossweb-img.qq.com/images/lol/v2/banner/big-v7.webm" type="video/webm">
+                <source src="https://ossweb-img.qq.com/images/lol/v2/banner/big-v7.mp4" type="video/mp4">
+            </video>
             <video class="banner-back-video" id="bannerBackVideo" autoplay="" loop="">
                 <source src="https://ossweb-img.qq.com/images/lol/v2/banner/back-v7.webm" type="video/webm">
                 <source src="https://ossweb-img.qq.com/images/lol/v2/banner/back-v7.mp4" type="video/mp4">
-            </video>
+            </video> 
             <div class="banner-act">
                 <h2 class="banner-act-name">对决！ 黎明VS黑夜<span>对决！ 黎明VS黑夜</span></h2>
                 <p class="banner-act-describe">秩序。混沌。二者相争不绝，无所不用其极。疾风化尽，命数将成。</p>
@@ -134,7 +138,7 @@
     <!-- menu -->
     <div class="menu">
         <ul id="J_menu" class="menu-inner layout">
-            <li id="J_menuHome" class="menu-item cur">综合资讯<i class="icon-update"></i></li>
+            <li id="J_menuHome" class="menu-item current">综合资讯<i class="icon-update"></i></li>
             <li class="dot"></li>
             <li id="J_menuVideo" class="menu-item">视频中心<i class="icon-update"></i></li>
             <li class="dot"></li>
@@ -830,7 +834,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <a class="qt-go"><img alt="" src="https://ossweb-img.qq.com/images/lol/v1/survey.jpg" width="400" height="90"></a>
+                            <a class="qt-go" href=""><img alt="" src="https://ossweb-img.qq.com/images/lol/v1/survey.jpg" width="400" height="90"></a>
                             <div class="side-tips-18">
                                 <i class="icon-18"></i>
                                 <h5>本游戏适合18岁（含）以上玩家娱乐</h5>
@@ -972,8 +976,21 @@
                         </div>
                         <!-- 最新推荐 -->
                     </div>
+                    <!-- 视频中心 -->
+                    <div class="home-slide-item">
+                        视频中心
+                    </div>
+                    <!-- 赛事中心 -->
+                    <div class="home-slide-item">
+                        赛事中心
+                    </div>
+                    <!-- 活动中心 -->
+                    <div class="home-slide-item">
+                        活动中心
+                    </div>
 
                 </div>
+                
                 
 
             </div>
@@ -1018,6 +1035,7 @@
             </ul>
         </div>
     </div>
+    
     <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
