@@ -448,6 +448,17 @@ a.sub-nav-link:hover{
     margin-top: -20px;
     background: #f7f7f7 url(http://ossweb-img.qq.com/images/lol/v2/bg-content-top.jpg) no-repeat center top;
 }
+
+/* 视频弹窗 */
+ .pop-top-video{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+    /* margin-left: -375px;  */
+    z-index: 9999;
+    background: rgba(0,0,0,.3);
+} 
 .promo{
     float: left;
     position: relative;

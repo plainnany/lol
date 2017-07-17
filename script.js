@@ -72,5 +72,7 @@ $(function(){
         })
     })
 
+    $('#Video').height($(window).height()+20)
+
 
 })
