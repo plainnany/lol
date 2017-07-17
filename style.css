@@ -34,7 +34,7 @@ img{
 ,.icon-top-play,.icon-guide,.icon-yuzhou,.icon-mall,.icon-client
 ,.icon-canyon,.icon-cdk,.icon-mode,.icon-info,.icon-reward,.icon-weibo
 ,.icon-bbs,.icon-qq,.icon-18{
-    background-image: url("http://ossweb-img.qq.com/images/lol/v2/spr-v2.png");
+    background-image: url("https://ossweb-img.qq.com/images/lol/v2/spr-v2.png");
     background-repeat: no-repeat;
 }
 .top{
@@ -47,7 +47,7 @@ img{
 .header{
     height: 840px;
     /* transition: all 0.8s ease; */
-    background: url(http://ossweb-img.qq.com/images/lol/v2/banner/pic-back-v7.jpg) no-repeat center 90px;
+    background: url(https://ossweb-img.qq.com/images/lol/v2/banner/pic-back-v7.jpg) no-repeat center 90px;
 }
 #navbar{
     height: 90px;
@@ -395,7 +395,7 @@ a.sub-nav-link:hover{
 }
 .header-close{
     height: 440px;
-    background: url(http://ossweb-img.qq.com/images/lol/v2/banner/pic-back-v7.jpg) no-repeat center 90px;
+    background: url(https://ossweb-img.qq.com/images/lol/v2/banner/pic-back-v7.jpg) no-repeat center 90px;
 }
 .header-close .banner-big-video {
     opacity: 0;
@@ -414,7 +414,7 @@ a.sub-nav-link:hover{
     width: 100%;
     height: 80px;
     border-top: 2px solid #8c6c2d;
-    background: url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) repeat-x 0 -257px;
+    background: url(https://ossweb-img.qq.com/images/lol/v2/spr-v2.png) repeat-x 0 -257px;
 }
 .menu .current{
     color: #d1ab57;
@@ -435,7 +435,7 @@ a.sub-nav-link:hover{
     width: 13px;
     height: 50px;
     margin: 4px 18px;
-    background: url(http://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat -290px -30px;
+    background: url(https://ossweb-img.qq.com/images/lol/v2/spr-v2.png) no-repeat -290px -30px;
 }
 .fix-menu{
     position: fixed;
@@ -446,7 +446,7 @@ a.sub-nav-link:hover{
 .content{
     padding-top: 40px;
     margin-top: -20px;
-    background: #f7f7f7 url(http://ossweb-img.qq.com/images/lol/v2/bg-content-top.jpg) no-repeat center top;
+    background: #f7f7f7 url(https://ossweb-img.qq.com/images/lol/v2/bg-content-top.jpg) no-repeat center top;
 }
 
 /* 视频弹窗 */
@@ -511,7 +511,7 @@ a.sub-nav-link:hover{
     width: 100%;
     height: 150px;
     margin-bottom: 10px;
-    background: url(http://ossweb-img.qq.com/images/lol/v2/bg-download.jpg) no-repeat 0 0;
+    background: url(https://ossweb-img.qq.com/images/lol/v2/bg-download.jpg) no-repeat 0 0;
 }
 .side-nav-download{
     display: block;
@@ -914,7 +914,7 @@ a.sub-nav-link:hover{
     left: 60px;
     top: 20px;
     display: none;
-    background: url(http://ossweb-img.qq.com/images/lol/web201310/video/bg-icon-v.png) no-repeat 0 0;
+    background: url(https://ossweb-img.qq.com/images/lol/web201310/video/bg-icon-v.png) no-repeat 0 0;
 }
 .pv-list li .pv-lnk h5 {
     font-weight: normal;
@@ -1045,7 +1045,7 @@ a.sub-nav-link:hover{
 .footer{
     padding: 30px 0;
     zoom: 1;
-    background: url(http://ossweb-img.qq.com/images/lol/v2/bg-footer.jpg) no-repeat center top;
+    background: url(https://ossweb-img.qq.com/images/lol/v2/bg-footer.jpg) no-repeat center top;
     color: #A5A5A5;
 }
 .footer .footer-list{
