@@ -11,7 +11,14 @@ $(function(){
             $('.menu').removeClass('fix-menu')
         }
     })
-    
+
+    //  pop-close
+    $('.pop-close').click(function(){
+        $('#video').removeClass('active')
+    })
+    $('.btn-top-play').click(function(){
+        $('#video').addClass('active')
+    })
     // tab auto
     let aPromoLi = $('.promo-trigger').children()
     let width = $('.promo-item')[0].offsetWidth
