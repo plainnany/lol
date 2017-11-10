@@ -12,7 +12,7 @@ $(function(){
         }
     })
 
-    //  pop-close
+    //  pop-close 
     $('.pop-close').click(function(){
         $('#video').removeClass('active')
     })
@@ -55,7 +55,7 @@ $(function(){
     })
 
 
-    // tab
+    // tab here
     function tab(oNav,oContent,oEvent){
         oContent.hide().eq(0).show()
         var aLi = oNav.children()
